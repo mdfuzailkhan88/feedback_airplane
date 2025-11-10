@@ -22,6 +22,14 @@ Effective topic modeling requires standardizing the text data by reducing noise 
 3.	Stop Word Removal: Eliminated common, non-descriptive words (e.g., 'the', 'a', 'is') using the NLTK stop list.
 4.	Lemmatization: Reduced words to their root form (e.g., 'running' became 'run', 'delays' became 'delay') using the WordNet Lemmatizer to group related terms.
 This process created the cleaned_text column, which served as the input for all subsequent modeling.
+
+<img width="704" height="470" alt="1" src="https://github.com/user-attachments/assets/7930574c-528e-4559-827e-9cba2c8f6240" />
+
+Negative tweets: These dominate the chart, with a count exceeding 9,000. This suggests that the majority of tweets analyzed express dissatisfaction, criticism, or negative emotions.
+
+Neutral tweets: Around 3,000 tweets fall into this category. These are likely factual, emotionless, or balanced in tone.
+
+Positive tweets: Slightly above 2,500, making them the least common. These tweets likely express support, happiness, or approval.
 ________________________________________
 4. Topic Modeling 
 Goal: Discover the underlying themes driving customer complaints that were not explicitly categorized by the original data collectors.
