@@ -15,6 +15,26 @@ Key EDA Insights:
 •	Pre-Labeled Reasons: The negativereason column provided an initial view of the problem landscape, showing that issues like "Customer Service Issue" and "Late Flight" are the most frequent causes of complaints.
 •	Data Integrity: The data was generally clean, but tweets needed noise reduction (mentions, URLs, symbols) before topic modeling could be effective.
 
+<img width="989" height="590" alt="2" src="https://github.com/user-attachments/assets/a270165c-da38-4e2e-a91c-c5d66601b74d" />
+
+✈️ Airline Sentiment Summary
+US Airways has the most negative tweets, showing strong customer dissatisfaction.
+
+United also receives many negative tweets, though with some neutral and positive ones.
+
+American and Southwest show similar patterns—mostly negative, fewer neutral and positive.
+
+Delta has fewer tweets overall, but still leans negative.
+
+Virgin America has the fewest tweets and a more balanced sentiment, suggesting better customer perception or lower engagement.
+
+🔍 Key Takeaways
+Negative sentiment dominates across all airlines.
+
+Virgin America stands out with a more even sentiment spread.
+
+Tweet volume may reflect both customer base size and public engagement.
+
 <img width="704" height="470" alt="1" src="https://github.com/user-attachments/assets/7930574c-528e-4559-827e-9cba2c8f6240" />
 
 Negative tweets: These dominate the chart, with a count exceeding 9,000. This suggests that the majority of tweets analyzed express dissatisfaction, criticism, or negative emotions.
