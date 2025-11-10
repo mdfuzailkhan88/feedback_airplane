@@ -23,7 +23,7 @@ Neutral tweets: Around 3,000 tweets fall into this category. These are likely fa
 
 Positive tweets: Slightly above 2,500, making them the least common. These tweets likely express support, happiness, or approval.
 ________________________________________
-________________________________________
+
 3. Text Preprocessing 
 Effective topic modeling requires standardizing the text data by reducing noise and linguistic variations. The following steps were applied to the text column:
 1.	Lowercasing: Standardized all text to prevent the model from treating 'Flight' and 'flight' as different words.
@@ -32,7 +32,7 @@ Effective topic modeling requires standardizing the text data by reducing noise 
 4.	Lemmatization: Reduced words to their root form (e.g., 'running' became 'run', 'delays' became 'delay') using the WordNet Lemmatizer to group related terms.
 This process created the cleaned_text column, which served as the input for all subsequent modeling.
 
-
+________________________________________
 4. Topic Modeling 
 Goal: Discover the underlying themes driving customer complaints that were not explicitly categorized by the original data collectors.
 Algorithm Choice Justification: NMF
