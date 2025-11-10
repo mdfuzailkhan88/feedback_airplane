@@ -15,7 +15,7 @@ Key EDA Insights:
 •	Pre-Labeled Reasons: The negativereason column provided an initial view of the problem landscape, showing that issues like "Customer Service Issue" and "Late Flight" are the most frequent causes of complaints.
 •	Data Integrity: The data was generally clean, but tweets needed noise reduction (mentions, URLs, symbols) before topic modeling could be effective.
 ________________________________________
-3. Text Preprocessing (15%)
+3. Text Preprocessing 
 Effective topic modeling requires standardizing the text data by reducing noise and linguistic variations. The following steps were applied to the text column:
 1.	Lowercasing: Standardized all text to prevent the model from treating 'Flight' and 'flight' as different words.
 2.	Noise Removal: Removed Twitter handles (@mentions), URLs, and non-alphabetic characters.
@@ -36,7 +36,7 @@ Topic 1	flight, hour, late, delay, min	Severe Delay/Late Flight
 Topic 4	service, issue, bad, phone, customer	Poor Customer Service
 Topic 6	ticket, help, booking, email, change	Booking/Ticket Issues
 ________________________________________
-5. Sentiment Analysis using LLMs (15%)
+5. Sentiment Analysis using LLMs 
 Goal: Go beyond the categorical 'negative' label to measure the intensity or severity of the complaint using advanced language models.
 Methodology (LLM Integration)
 Instead of relying on simple rule-based models (like VADER), the project is designed to use a large language model (LLM), such as Groq, via API calls.
