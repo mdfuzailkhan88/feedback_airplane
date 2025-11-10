@@ -14,14 +14,6 @@ Key EDA Insights:
 •	Focus: The analysis primarily focused on the negative tweets, which comprise the majority of the dataset.
 •	Pre-Labeled Reasons: The negativereason column provided an initial view of the problem landscape, showing that issues like "Customer Service Issue" and "Late Flight" are the most frequent causes of complaints.
 •	Data Integrity: The data was generally clean, but tweets needed noise reduction (mentions, URLs, symbols) before topic modeling could be effective.
-________________________________________
-3. Text Preprocessing 
-Effective topic modeling requires standardizing the text data by reducing noise and linguistic variations. The following steps were applied to the text column:
-1.	Lowercasing: Standardized all text to prevent the model from treating 'Flight' and 'flight' as different words.
-2.	Noise Removal: Removed Twitter handles (@mentions), URLs, and non-alphabetic characters.
-3.	Stop Word Removal: Eliminated common, non-descriptive words (e.g., 'the', 'a', 'is') using the NLTK stop list.
-4.	Lemmatization: Reduced words to their root form (e.g., 'running' became 'run', 'delays' became 'delay') using the WordNet Lemmatizer to group related terms.
-This process created the cleaned_text column, which served as the input for all subsequent modeling.
 
 <img width="704" height="470" alt="1" src="https://github.com/user-attachments/assets/7930574c-528e-4559-827e-9cba2c8f6240" />
 
@@ -31,6 +23,16 @@ Neutral tweets: Around 3,000 tweets fall into this category. These are likely fa
 
 Positive tweets: Slightly above 2,500, making them the least common. These tweets likely express support, happiness, or approval.
 ________________________________________
+________________________________________
+3. Text Preprocessing 
+Effective topic modeling requires standardizing the text data by reducing noise and linguistic variations. The following steps were applied to the text column:
+1.	Lowercasing: Standardized all text to prevent the model from treating 'Flight' and 'flight' as different words.
+2.	Noise Removal: Removed Twitter handles (@mentions), URLs, and non-alphabetic characters.
+3.	Stop Word Removal: Eliminated common, non-descriptive words (e.g., 'the', 'a', 'is') using the NLTK stop list.
+4.	Lemmatization: Reduced words to their root form (e.g., 'running' became 'run', 'delays' became 'delay') using the WordNet Lemmatizer to group related terms.
+This process created the cleaned_text column, which served as the input for all subsequent modeling.
+
+
 4. Topic Modeling 
 Goal: Discover the underlying themes driving customer complaints that were not explicitly categorized by the original data collectors.
 Algorithm Choice Justification: NMF
